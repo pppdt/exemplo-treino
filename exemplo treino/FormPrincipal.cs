@@ -33,5 +33,12 @@ namespace exemplo_treino
             form.MdiParent = this;
             form.Show();
         }
+
+        private void relatórioDeAlunosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRelatorioAluno form = new FormRelatorioAluno();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }

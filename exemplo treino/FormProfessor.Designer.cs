@@ -444,7 +444,7 @@
             this.btnCancelar.HighEmphasis = true;
             this.btnCancelar.Icon = null;
             this.btnCancelar.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.btnCancelar.Location = new System.Drawing.Point(528, 371);
+            this.btnCancelar.Location = new System.Drawing.Point(186, 371);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnCancelar.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.btnCancelar.Name = "btnCancelar";
@@ -465,7 +465,7 @@
             this.btnSalvar.HighEmphasis = true;
             this.btnSalvar.Icon = null;
             this.btnSalvar.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.btnSalvar.Location = new System.Drawing.Point(643, 371);
+            this.btnSalvar.Location = new System.Drawing.Point(469, 371);
             this.btnSalvar.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnSalvar.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.btnSalvar.Name = "btnSalvar";
@@ -579,6 +579,7 @@
             this.ClientSize = new System.Drawing.Size(894, 551);
             this.Controls.Add(this.tabpageprof);
             this.Name = "FormProfessor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormProfessor";
             this.tabpageprof.ResumeLayout(false);
             this.taPage1.ResumeLayout(false);

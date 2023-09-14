@@ -143,7 +143,7 @@ namespace exemplo_treino
             this.materialButton2.HighEmphasis = true;
             this.materialButton2.Icon = null;
             this.materialButton2.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton2.Location = new System.Drawing.Point(466, 348);
+            this.materialButton2.Location = new System.Drawing.Point(127, 382);
             this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton2.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.materialButton2.Name = "materialButton2";
@@ -164,7 +164,7 @@ namespace exemplo_treino
             this.materialButton1.HighEmphasis = true;
             this.materialButton1.Icon = null;
             this.materialButton1.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            this.materialButton1.Location = new System.Drawing.Point(570, 348);
+            this.materialButton1.Location = new System.Drawing.Point(493, 382);
             this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.materialButton1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             this.materialButton1.Name = "materialButton1";
@@ -189,7 +189,7 @@ namespace exemplo_treino
             this.txtsenha.HideSelection = true;
             this.txtsenha.Hint = "Senha";
             this.txtsenha.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtsenha.LeadingIcon")));
-            this.txtsenha.Location = new System.Drawing.Point(17, 291);
+            this.txtsenha.Location = new System.Drawing.Point(17, 311);
             this.txtsenha.MaxLength = 32767;
             this.txtsenha.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             this.txtsenha.Name = "txtsenha";
@@ -568,6 +568,7 @@ namespace exemplo_treino
             this.Controls.Add(this.tabpage);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCadastro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Alunos";
             this.Load += new System.EventHandler(this.FormCadastro_Load);
             this.tabpage.ResumeLayout(false);

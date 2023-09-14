@@ -38,13 +38,16 @@ namespace exemplo_treino
             this.alunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.professoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cursosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatórioDeAlunosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // formMenuStrip1
             // 
             this.formMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.opçõesToolStripMenuItem});
+            this.opçõesToolStripMenuItem,
+            this.relatóriosToolStripMenuItem});
             this.formMenuStrip1.Location = new System.Drawing.Point(3, 64);
             this.formMenuStrip1.Name = "formMenuStrip1";
             controlRenderer1.ColorTable = msColorTable1;
@@ -69,7 +72,7 @@ namespace exemplo_treino
             // 
             this.alunosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.alunosToolStripMenuItem.Name = "alunosToolStripMenuItem";
-            this.alunosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alunosToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.alunosToolStripMenuItem.Text = "Alunos";
             this.alunosToolStripMenuItem.Click += new System.EventHandler(this.alunosToolStripMenuItem_Click);
             // 
@@ -77,7 +80,7 @@ namespace exemplo_treino
             // 
             this.professoresToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.professoresToolStripMenuItem.Name = "professoresToolStripMenuItem";
-            this.professoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.professoresToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.professoresToolStripMenuItem.Text = "Professores";
             this.professoresToolStripMenuItem.Click += new System.EventHandler(this.professoresToolStripMenuItem_Click);
             // 
@@ -85,9 +88,26 @@ namespace exemplo_treino
             // 
             this.cursosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.cursosToolStripMenuItem.Name = "cursosToolStripMenuItem";
-            this.cursosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cursosToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.cursosToolStripMenuItem.Text = "Cursos";
             this.cursosToolStripMenuItem.Click += new System.EventHandler(this.cursosToolStripMenuItem_Click);
+            // 
+            // relatóriosToolStripMenuItem
+            // 
+            this.relatóriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.relatórioDeAlunosToolStripMenuItem});
+            this.relatóriosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
+            this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.relatóriosToolStripMenuItem.Text = "Relatórios";
+            // 
+            // relatórioDeAlunosToolStripMenuItem
+            // 
+            this.relatórioDeAlunosToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.relatórioDeAlunosToolStripMenuItem.Name = "relatórioDeAlunosToolStripMenuItem";
+            this.relatórioDeAlunosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.relatórioDeAlunosToolStripMenuItem.Text = "Relatório de Alunos";
+            this.relatórioDeAlunosToolStripMenuItem.Click += new System.EventHandler(this.relatórioDeAlunosToolStripMenuItem_Click);
             // 
             // FormPrincipal
             // 
@@ -118,5 +138,7 @@ namespace exemplo_treino
         private ToolStripMenuItem alunosToolStripMenuItem;
         private ToolStripMenuItem professoresToolStripMenuItem;
         private ToolStripMenuItem cursosToolStripMenuItem;
+        private ToolStripMenuItem relatóriosToolStripMenuItem;
+        private ToolStripMenuItem relatórioDeAlunosToolStripMenuItem;
     }
 }
