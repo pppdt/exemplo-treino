@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="C:\Users\aluno\Downloads\teste.cs" Link="teste.cs" />
+    <EmbeddedResource Remove="teste.resx" />
   </ItemGroup>
 
   <ItemGroup>
