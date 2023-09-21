@@ -22,7 +22,8 @@ namespace exemplo_treino
                     "uid=root;" +
                     "pwd=;" +
                     "database=academico";
-
+     
+         private PdfDocument doc;
         public FormRelatorioCurso()
         {
             InitializeComponent();
@@ -37,7 +38,6 @@ namespace exemplo_treino
             }
         }
 
-        private PdfDocument doc = new PdfDocument();
 
         private void MontaRelatorio()
         {
@@ -46,9 +46,9 @@ namespace exemplo_treino
             con.Open();
             var sql = "SELECT * FROM curso WHERE 1=1";
             if (cboTipo.Text != "")
-                sql += "and tipo = @tipo";
+                sql += " and tipo = @tipo";
             if (txtAno.Text != "")
-                sql += "and ano_criacao = @ano_criacao";
+                sql += " and ano_criacao = @ano_criacao";
 
             var sqlAd = new MySqlDataAdapter();
             sqlAd.SelectCommand = new MySqlCommand(sql, con);
@@ -57,12 +57,13 @@ namespace exemplo_treino
             if (txtAno.Text != "")
                 sqlAd.SelectCommand.Parameters.AddWithValue("@ano_criacao", txtAno.Text);
 
-            var dt = new DataTable();
+            doc = new PdfDocument();
+
+        var dt = new DataTable();
             sqlAd.Fill(dt);//resultado da consulta em memoria
             con.Close();
 
             //Inicio geração pdf
-            PdfDocument doc = new PdfDocument();
             PdfSection sec = doc.Sections.Add();
             sec.PageSettings.Width = PdfPageSize.A4.Width;
             PdfPageBase page = sec.Pages.Add();

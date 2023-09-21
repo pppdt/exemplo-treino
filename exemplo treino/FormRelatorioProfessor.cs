@@ -23,7 +23,7 @@ namespace exemplo_treino
                     "pwd=;" +
                     "database=academico";
 
-
+        private PdfDocument doc;
         public FormRelatorioProfessor()
         {
 
@@ -38,7 +38,7 @@ namespace exemplo_treino
                 cboImpressora.Items.Add(printer);
             }
         }
-        private PdfDocument doc = new PdfDocument();
+
 
         private void MontaRelatorio()
         {
@@ -47,23 +47,25 @@ namespace exemplo_treino
             con.Open();
             var sql = "SELECT * FROM professor WHERE 1=1";
             if (cboEstado.Text != "")
-                sql += "and estado = @estado";
+                sql += " and estado = @estado";
             if (txtCidade.Text != "")
-                sql += "and cidade = @cidade";
+                sql += " and cidade = @cidade";
 
             var sqlAd = new MySqlDataAdapter();
             sqlAd.SelectCommand = new MySqlCommand(sql, con);
             if (cboEstado.Text != "")
                 sqlAd.SelectCommand.Parameters.AddWithValue("@estado", cboEstado.Text);
             if (txtCidade.Text != "")
-                sqlAd.SelectCommand.Parameters.AddWithValue("@cidade", cboEstado.Text);
+                sqlAd.SelectCommand.Parameters.AddWithValue("@cidade", txtCidade.Text);
+
+            doc = new PdfDocument();
 
             var dt = new DataTable();
             sqlAd.Fill(dt);//resultado da consulta em memoria
             con.Close();
 
             //Inicio geração pdf
-            PdfDocument doc = new PdfDocument();
+            //PdfDocument doc = new PdfDocument(); tirar essa linha
             PdfSection sec = doc.Sections.Add();
             sec.PageSettings.Width = PdfPageSize.A4.Width;
             PdfPageBase page = sec.Pages.Add();

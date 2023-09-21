@@ -62,7 +62,7 @@
             this.txtAno.HideSelection = true;
             this.txtAno.Hint = "Ano de Criação:";
             this.txtAno.LeadingIcon = null;
-            this.txtAno.Location = new System.Drawing.Point(301, 15);
+            this.txtAno.Location = new System.Drawing.Point(6, 16);
             this.txtAno.MaxLength = 32767;
             this.txtAno.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             this.txtAno.Name = "txtAno";
@@ -74,7 +74,7 @@
             this.txtAno.SelectionLength = 0;
             this.txtAno.SelectionStart = 0;
             this.txtAno.ShortcutsEnabled = true;
-            this.txtAno.Size = new System.Drawing.Size(173, 48);
+            this.txtAno.Size = new System.Drawing.Size(288, 48);
             this.txtAno.TabIndex = 1;
             this.txtAno.TabStop = false;
             this.txtAno.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -102,11 +102,11 @@
             "Técnologo",
             "Bacharelado",
             "Licenciatura"});
-            this.cboTipo.Location = new System.Drawing.Point(6, 15);
+            this.cboTipo.Location = new System.Drawing.Point(311, 15);
             this.cboTipo.MaxDropDownItems = 4;
             this.cboTipo.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             this.cboTipo.Name = "cboTipo";
-            this.cboTipo.Size = new System.Drawing.Size(289, 49);
+            this.cboTipo.Size = new System.Drawing.Size(153, 49);
             this.cboTipo.StartIndex = 0;
             this.cboTipo.TabIndex = 0;
             // 
