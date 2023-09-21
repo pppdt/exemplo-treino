@@ -40,5 +40,20 @@ namespace exemplo_treino
             form.MdiParent = this;
             form.Show();
         }
+
+        private void relatórioCursosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRelatorioProfessor form = new FormRelatorioProfessor();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void relatórioCursosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormRelatorioCurso form = new FormRelatorioCurso();
+            form.MdiParent = this;
+            form.Show();   
+           
+        }
     }
 }
